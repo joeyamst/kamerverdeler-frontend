@@ -16,7 +16,7 @@ function Kamerverdeler() {
   return (
     <div>
       <Heading level={1} className="ams-mb-l">
-        Kamerverdeler applicatie
+        Vul de voorkeursdagen per team in
       </Heading>
       <Button
         onClick={() => setIds([...ids, ids.length + 1])}
