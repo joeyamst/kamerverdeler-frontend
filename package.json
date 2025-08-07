@@ -2,6 +2,7 @@
   "name": "kamerverdeler",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://joeyamst.github.io/kamerverdeler-frontend/",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
