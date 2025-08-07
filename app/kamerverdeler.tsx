@@ -1,19 +1,34 @@
 "use client";
 
-import "@amsterdam/design-system-assets/font/index.css"
-import "@amsterdam/design-system-css/dist/index.css"
-import "@amsterdam/design-system-tokens/dist/index.css"
-import {Heading, Paragraph} from "@amsterdam/design-system-react"
+import { Button, Heading } from "@amsterdam/design-system-react";
+import { TeamInput } from "./TeamInput";
+import { useActionState, useState } from "react";
+
+import { postData } from "./actions";
+
+const initialState: unknown = {};
 
 function Kamerverdeler() {
-    return <div>
-        <Heading level={1}>
-            Kamerverdeler applicatie
-        </Heading>
-        <Paragraph>
-            Hier komt een kamerverdeler
-        </Paragraph>
+  const [ids, setIds] = useState<number[]>([1]);
+  const [_, formAction] = useActionState(postData, initialState);
+
+  return (
+    <div>
+      <Heading level={1}>Kamerverdeler applicatie</Heading>
+      <form action={formAction} className="ams-mb-xl">
+        {ids.map((id) => (
+          <TeamInput key={id} id={id} />
+        ))}
+        <Button type="submit">Verdeel kamers</Button>
+      </form>
+      <Button
+        onClick={() => setIds([...ids, ids.length + 1])}
+        variant="secondary"
+      >
+        Voeg teamlid toe
+      </Button>
     </div>
+  );
 }
 
-export default Kamerverdeler
+export default Kamerverdeler;
