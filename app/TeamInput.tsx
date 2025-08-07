@@ -7,6 +7,7 @@ import {
   Checkbox,
   Row,
   Paragraph,
+  Button,
 } from "@amsterdam/design-system-react";
 
 const days = [
@@ -52,7 +53,13 @@ const days = [
   },
 ];
 
-export const TeamInput = ({ id }: { id: number }) => {
+export const TeamInput = ({
+  id,
+  setIds,
+}: {
+  id: number;
+  setIds: React.Dispatch<React.SetStateAction<number[]>>;
+}) => {
   return (
     <Column
       className="ams-mb-l"
@@ -86,6 +93,18 @@ export const TeamInput = ({ id }: { id: number }) => {
         <Label htmlFor={`size-${id}`}>Teamgrootte</Label>
         <TextInput id={`size-${id}`} name={`size-${id}`} size={4} />
       </Field>
+
+      <div>
+        <Button
+          variant="secondary"
+          type="button"
+          onClick={() =>
+            setIds((prev) => prev.filter((teamId) => teamId !== id))
+          }
+        >
+          Verwijder team
+        </Button>
+      </div>
     </Column>
   );
 };

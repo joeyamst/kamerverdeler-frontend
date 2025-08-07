@@ -28,7 +28,7 @@ function Kamerverdeler() {
       </Button>
       <form action={formAction} className="ams-mb-xl">
         {ids.map((id) => (
-          <TeamInput key={id} id={id} />
+          <TeamInput key={id} id={id} setIds={setIds} />
         ))}
         <Button type="submit">Verdeel kamers</Button>
       </form>
