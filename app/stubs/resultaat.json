@@ -1,0 +1,72 @@
+[
+    {
+      "room_8_1": "Team A",
+      "room_8_2": "Team B",
+      "room_10_1": "Team C",
+      "room_10_2": "Team D",
+      "room_12_1": "Team E"
+    },
+    {
+      "room_1": "Team F",
+      "room_2": "Team G",
+      "room_3": "Team H",
+      "room_4": "Team I",
+      "room_5": "Team J"
+    },
+    {
+      "room_1": "Team K",
+      "room_2": "Team L",
+      "room_3": "Team M",
+      "room_4": "Team N",
+      "room_5": "Team O"
+    },
+    {
+      "room_1": "Team P",
+      "room_2": "Team Q",
+      "room_3": "Team R",
+      "room_4": "Team S",
+      "room_5": "Team T"
+    },
+    {
+      "room_1": "Team U",
+      "room_2": "Team V",
+      "room_3": "Team A",
+      "room_4": "Team B",
+      "room_5": "Team C"
+    },
+    {
+      "room_1": "Team D",
+      "room_2": "Team E",
+      "room_3": "Team F",
+      "room_4": "Team G",
+      "room_5": "Team H"
+    },
+    {
+      "room_1": "Team I",
+      "room_2": "Team J",
+      "room_3": "Team K",
+      "room_4": "Team L",
+      "room_5": "Team M"
+    },
+    {
+      "room_1": "Team N",
+      "room_2": "Team O",
+      "room_3": "Team P",
+      "room_4": "Team Q",
+      "room_5": "Team R"
+    },
+    {
+      "room_1": "Team S",
+      "room_2": "Team T",
+      "room_3": "Team U",
+      "room_4": "Team V",
+      "room_5": "Team A"
+    },
+    {
+      "room_1": "Team B",
+      "room_2": "Team C",
+      "room_3": "Team D",
+      "room_4": "Team E",
+      "room_5": "Team F"
+    }
+]
